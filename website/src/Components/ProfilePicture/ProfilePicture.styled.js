@@ -2,13 +2,17 @@ import styled from "styled-components";
 import { ReactComponent as ProfilePicture } from "../../Assets/ProfilePicture.svg";
 
 const Picture = styled(ProfilePicture)`
-  width: 40rem;
-  height: auto;
+  width: 50vw;
+  height: 50vh;
+  display:flex;
+  flex-grow:1;
 `;
 
 const PictureWrapper = styled.div`
-  padding: 1rem;
-  padding-top: 2rem;
+  width:50vw;
+  height:50vh;
+  display:flex;
+  flex-grow:1;
   /* margin: auto; */
 `;
 

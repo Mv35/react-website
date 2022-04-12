@@ -6,9 +6,10 @@ const MainWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: green;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   color: red;
+  flex-grow:1;
 `;
 
 export { MainWrapper };
