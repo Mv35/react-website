@@ -1,4 +1,4 @@
-import { MainWrapper } from "./App.styled";
+import { MainBody, MainWrapper } from "./App.styled";
 import ProfilePicture from "./Components/ProfilePicture/ProfilePicture";
 import LifeGoalsIcon from "./Components/LifeGoalsIcons/LifeGoalsIcons";
 import lifeGoalTurin from "./Assets/lifeGoal_turin.jpeg";
@@ -22,11 +22,13 @@ const LifeGoals = () => {
 const App = () => {
   console.log("this is my react website with a svg pic of me");
   return (
-    <MainWrapper>
-      This is me <ProfilePicture></ProfilePicture>
-      <div>{LifeGoals()}</div>
-      <DownloadPdfButton>click me</DownloadPdfButton>
-    </MainWrapper>
+    <MainBody>
+      <MainWrapper>
+        This is me <ProfilePicture></ProfilePicture>
+        <div>{LifeGoals()}</div>
+        <DownloadPdfButton>click me</DownloadPdfButton>
+      </MainWrapper>
+    </MainBody>
   );
 };
 

@@ -10,8 +10,8 @@ const LifeGoalsPictureWrapper = styled.span`
   position: relative;
   flex-grow: 1;
   float: top;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 25%;
+  margin-top: 25%;
 `;
 
 const LifeGoalsPictureWrapperText = styled.div`
