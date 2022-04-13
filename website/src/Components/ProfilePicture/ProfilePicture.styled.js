@@ -4,15 +4,15 @@ import { ReactComponent as ProfilePicture } from "../../Assets/ProfilePicture.sv
 const Picture = styled(ProfilePicture)`
   width: 50vw;
   height: 50vh;
-  display:flex;
-  flex-grow:1;
+  display: flex;
+  flex-grow: 1;
 `;
 
 const PictureWrapper = styled.div`
-  width:50vw;
-  height:50vh;
-  display:flex;
-  flex-grow:1;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  flex-grow: 1;
   /* margin: auto; */
 `;
 
