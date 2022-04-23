@@ -1,14 +1,18 @@
 import React from "react";
 
-import { LifeGoalPicture } from "./LifeGoalsIcons.styled";
+import { LifeGoalPicture, LifeGoalText } from "./LifeGoalsIcons.styled";
 
 const LifeGoalsIcon = (props) => {
-  // this.setState = { first: 1, second: 2 };
   console.log("props", props);
-  return props.name % 2 !== 10 ? (
-    <LifeGoalPicture src={props.src} alt={props.alt}></LifeGoalPicture>
-  ) : (
-    <></>
+  return (
+    <div>
+      <LifeGoalPicture
+        isOdd={props.isOdd}
+        src={props.src}
+        alt={props.alt}
+      ></LifeGoalPicture>
+      <LifeGoalText name={props.name}>{props.name}ciao</LifeGoalText>
+    </div>
   );
 };
 

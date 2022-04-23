@@ -15,7 +15,12 @@ const LifeGoals = () => {
     lifeGoalBournemouth2,
   ];
   return imagesArray.map((e, i) => (
-    <LifeGoalsIcon key={i} name={i} src={e}></LifeGoalsIcon>
+    <LifeGoalsIcon
+      key={i}
+      name={i}
+      src={e}
+      isOdd={i % 2 !== 0 ? true : false}
+    ></LifeGoalsIcon>
   ));
 };
 

@@ -10,6 +10,13 @@ const LifeGoalPicture = styled.img`
   flex-grow: 1;
   margin-top: 25%;
   margin-bottom: 25%;
+  float: ${(props) => (props.isOdd ? "left" : "right")};
 `;
 
-export { LifeGoalPicture };
+const LifeGoalText = styled.div`
+  color: black;
+  padding-top: 50px;
+  margin: 25px;
+  float: ${(props) => (props.isOdd ? "right" : "left")};
+`;
+export { LifeGoalPicture, LifeGoalText };

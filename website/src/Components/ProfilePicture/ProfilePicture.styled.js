@@ -9,6 +9,4 @@ const Picture = styled(ProfilePicture)`
   padding: 1rem;
 `;
 
-const PictureWrapper = styled.div``;
-
-export { Picture, PictureWrapper };
+export { Picture };

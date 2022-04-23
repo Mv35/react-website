@@ -1,5 +1,5 @@
 import React from "react";
-import { Picture, PictureWrapper } from "./ProfilePicture.styled";
+import { Picture } from "./ProfilePicture.styled";
 
 const ProfilePicture = () => {
   return <Picture />;
