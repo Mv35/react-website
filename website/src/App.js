@@ -30,7 +30,9 @@ const App = () => {
     <MainBody>
       <MainWrapper>
         This is me <ProfilePicture></ProfilePicture>
-        <div className="LifeGoalsDiv">{LifeGoals()}</div>
+        <div className="LifeGoalsDiv" style={{ width: "100%" }}>
+          {LifeGoals()}
+        </div>
         <DownloadPdfButton>click me</DownloadPdfButton>
       </MainWrapper>
     </MainBody>
