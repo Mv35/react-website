@@ -25,7 +25,7 @@ const App = () => {
     <MainBody>
       <MainWrapper>
         This is me <ProfilePicture></ProfilePicture>
-        <div className="LifeGoalsDiv">{LifeGoals()}</div>
+        <div>{LifeGoals()}</div>
         <DownloadPdfButton>click me</DownloadPdfButton>
       </MainWrapper>
     </MainBody>
