@@ -12,6 +12,7 @@ const MainWrapper = styled.div`
   height: 100%;
   color: red;
   flex-grow: 1;
+  justify-content: center;
 `;
 
 export { MainWrapper, MainBody };
