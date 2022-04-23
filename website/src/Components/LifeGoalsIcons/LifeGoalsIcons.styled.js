@@ -12,12 +12,12 @@ const LifeGoalPicture = styled.img`
   margin-bottom: 25%;
 `;
 
-const LifeGoalTextLeft = styled.div`
+const LifeGoalTextRight = styled.div`
   color: black;
   padding-top: 75px;
   margin-left: 25%;
 `;
-const LifeGoalTextRight = styled.div`
+const LifeGoalTextLeft = styled.div`
   color: black;
   padding-top: 75px;
   margin-right: 25%;
