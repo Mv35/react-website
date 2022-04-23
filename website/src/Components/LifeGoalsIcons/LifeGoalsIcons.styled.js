@@ -20,5 +20,6 @@ const LifeGoalTextLeft = styled.div`
 const LifeGoalTextRight = styled.div`
   color: black;
   padding-top: 75px;
+  margin-right: 25%;
 `;
 export { LifeGoalPicture, LifeGoalTextLeft, LifeGoalTextRight };
