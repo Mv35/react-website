@@ -12,15 +12,18 @@ const LifeGoalsIcon = (props) => {
     <div style={{ display: "flex", width: "100%" }}>
       <div style={{ width: "100%" }}>
         <LifeGoalTextLeft name={props.name}>
-          {props.isOdd ? props.name + "ciaostron \n sdasdasds" : ""}
+          {!props.isOdd ? props.name + "ciaostron \n sdasdasds" : ""}
         </LifeGoalTextLeft>
       </div>
+
       <div>
+        <hr width="1" size="50" color="red"></hr>
         <LifeGoalPicture src={props.src} alt={props.alt}></LifeGoalPicture>
+        <hr width="1" size="50" color="red"></hr>
       </div>
       <div style={{ width: "100%" }}>
         <LifeGoalTextRight name={props.name}>
-          {props.isOdd ? "" : props.name + "ciaostronzo \n asdasdsada"}
+          {props.isOdd ? props.name + "ciaostron \n sdasdasds" : ""}
         </LifeGoalTextRight>
       </div>
     </div>
