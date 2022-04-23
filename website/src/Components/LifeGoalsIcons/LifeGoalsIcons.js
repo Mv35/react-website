@@ -1,17 +1,28 @@
 import React from "react";
 
-import { LifeGoalPicture, LifeGoalText } from "./LifeGoalsIcons.styled";
+import {
+  LifeGoalPicture,
+  LifeGoalTextLeft,
+  LifeGoalTextRight,
+} from "./LifeGoalsIcons.styled";
 
 const LifeGoalsIcon = (props) => {
   console.log("props", props);
   return (
-    <div>
-      <LifeGoalPicture
-        isOdd={props.isOdd}
-        src={props.src}
-        alt={props.alt}
-      ></LifeGoalPicture>
-      <LifeGoalText name={props.name}>{props.name}ciao</LifeGoalText>
+    <div style={{ display: "flex", width: "100%" }}>
+      <div style={{ width: "50px" }}>
+        <LifeGoalTextRight name={props.name}>
+          {props.isOdd ? props.name : ""}
+        </LifeGoalTextRight>
+      </div>
+      <div>
+        <LifeGoalPicture src={props.src} alt={props.alt}></LifeGoalPicture>
+      </div>
+      <div style={{ width: "50px" }}>
+        <LifeGoalTextLeft name={props.name}>
+          {props.isOdd ? "" : props.name}
+        </LifeGoalTextLeft>
+      </div>
     </div>
   );
 };
