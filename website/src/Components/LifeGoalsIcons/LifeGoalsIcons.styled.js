@@ -12,10 +12,9 @@ const LifeGoalPicture = styled.img`
 
 const LifeGoalText = styled.div`
   color: black;
-  display: flex;
-  justify-content: center;
   position: relative;
-  top: 55%;
+  text-align: ${(props) => (props.isOdd ? "left" : "right")};
+  top: 35%;
   margin-left: ${(props) => (props.isOdd ? "15" : "25")}%;
   margin-right: ${(props) => (props.isOdd ? "25" : "15")}%;
 `;

@@ -12,7 +12,8 @@ const LifeGoalsIcon = (props) => {
       <div style={{ width: "100%" }}>
         {!props.isOdd && (
           <LifeGoalText name={props.name} isOdd={props.isOdd}>
-            {props.text}
+            <h1>test</h1>
+            <div>{props.text}</div>
           </LifeGoalText>
         )}
       </div>
@@ -36,7 +37,8 @@ const LifeGoalsIcon = (props) => {
       <div style={{ width: "100%" }}>
         {props.isOdd && (
           <LifeGoalText name={props.name} isOdd={props.isOdd}>
-            {props.text}
+            <h1>test</h1>
+            <div>{props.text}</div>
           </LifeGoalText>
         )}
       </div>
