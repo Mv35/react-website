@@ -20,7 +20,7 @@ const LifeGoalsIcon = (props) => {
       <div>
         <VerticalLine
           width="1"
-          size="100"
+          size="50"
           color="red"
           name={props.name}
           isFirst={props.name === 0 ? true : false}
