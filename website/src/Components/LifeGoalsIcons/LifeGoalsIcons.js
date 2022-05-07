@@ -1,9 +1,8 @@
 import React from "react";
-
 import {
   LifeGoalPicture,
-  LifeGoalTextLeft,
-  LifeGoalTextRight,
+  LifeGoalText,
+  VerticalLine,
 } from "./LifeGoalsIcons.styled";
 
 const LifeGoalsIcon = (props) => {
@@ -11,20 +10,35 @@ const LifeGoalsIcon = (props) => {
   return (
     <div style={{ display: "flex", width: "100%" }}>
       <div style={{ width: "100%" }}>
-        <LifeGoalTextLeft name={props.name}>
-          {!props.isOdd ? props.name + "ciaostron \n sdasdasds" : ""}
-        </LifeGoalTextLeft>
+        {!props.isOdd && (
+          <LifeGoalText name={props.name} isOdd={props.isOdd}>
+            {props.text}
+          </LifeGoalText>
+        )}
       </div>
-
       <div>
-        <hr width="1" size="50" color="red"></hr>
+        <VerticalLine
+          width="1"
+          size="100"
+          color="red"
+          name={props.name}
+          isFirst={props.name === 0 ? true : false}
+        />
         <LifeGoalPicture src={props.src} alt={props.alt}></LifeGoalPicture>
-        <hr width="1" size="50" color="red"></hr>
+        <VerticalLine
+          width="1"
+          size="50"
+          color="red"
+          name={props.name}
+          isLast={props.isLast}
+        />
       </div>
       <div style={{ width: "100%" }}>
-        <LifeGoalTextRight name={props.name}>
-          {props.isOdd ? props.name + "ciaostron \n sdasdasds" : ""}
-        </LifeGoalTextRight>
+        {props.isOdd && (
+          <LifeGoalText name={props.name} isOdd={props.isOdd}>
+            {props.text}
+          </LifeGoalText>
+        )}
       </div>
     </div>
   );

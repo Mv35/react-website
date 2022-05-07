@@ -14,12 +14,22 @@ const LifeGoals = () => {
     lifeGoalBournemouth1,
     lifeGoalBournemouth2,
   ];
+  const textArray = [
+    "this is for Turin",
+    "this is for Thailand",
+    "this is for Bournemouth1",
+    "this is for Bournemouth2",
+  ];
+  const lastIndex = imagesArray.length - 1;
+  console.log("aa ", lastIndex);
   return imagesArray.map((e, i) => (
     <LifeGoalsIcon
       key={i}
       name={i}
       src={e}
       isOdd={i % 2 !== 0 ? true : false}
+      isLast={i === lastIndex ? true : false}
+      text={textArray[i]}
     ></LifeGoalsIcon>
   ));
 };
