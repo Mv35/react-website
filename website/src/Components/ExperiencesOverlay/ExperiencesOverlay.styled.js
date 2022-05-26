@@ -8,7 +8,9 @@ const Overlay = styled.div`
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     overflow-x: hidden;
+    margin: 2%;
 `;
 
 export { Overlay };
