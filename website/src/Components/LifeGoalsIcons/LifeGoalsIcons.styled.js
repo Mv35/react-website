@@ -11,7 +11,7 @@ const LifeGoalPicture = styled.img`
 `;
 
 const LifeGoalText = styled.div`
-    color: black;
+    color: white;
     position: relative;
     text-align: ${(props) => (props.isOdd ? "left" : "right")};
     top: 35%;

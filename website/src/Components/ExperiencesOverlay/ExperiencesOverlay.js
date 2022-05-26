@@ -35,7 +35,11 @@ const LifeGoals = () => {
 
 const ExperiencesOverlay = (props) => {
     return (
-        <Overlay show={props.show} className="LifeGoalsOverlay">
+        <Overlay
+            show={props.show}
+            className="LifeGoalsOverlay"
+            id="LifeGoalsOverlay"
+        >
             {LifeGoals()}
             <div style={{ margin: "10px" }}>
                 <ShowOverlayButton

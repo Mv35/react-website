@@ -5,12 +5,18 @@ import DownloadPdfButton from "./Components/DownloadPDFButton/DownloadPdfButton"
 import ShowOverlayButton from "./Components/ShowOverlayButton/ShowOverlayButton";
 import ExperiencesOverlay from "./Components/ExperiencesOverlay/ExperiencesOverlay";
 
+const scrollToTop = () => {
+    document.getElementById("LifeGoalsOverlay").scroll(0, 0);
+};
+
 const App = () => {
     const [showExperiencesOverlay, setShowExperiencesOverlay] = useState(false);
 
     const ShowOverlayButtonClicked = () => {
         setShowExperiencesOverlay(!showExperiencesOverlay);
+        scrollToTop();
     };
+
     return (
         <>
             <MainWrapper>
