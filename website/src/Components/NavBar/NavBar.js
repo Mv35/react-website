@@ -4,12 +4,13 @@ import {
     NavBarLinks,
     NavBarLink,
     NavBarLinkAncor,
+    NavBarTitle,
 } from "./NavBar.styled";
 
 const NavBarComponent = () => {
     return (
         <NavBar className="navbar">
-            <h1 className="navbar-logo">Milo Volpicelli</h1>
+            <NavBarTitle className="navbar-logo">Milo Volpicelli</NavBarTitle>
             <div className="menu-icon"> </div>
             <NavBarLinks>
                 <NavBarLink>

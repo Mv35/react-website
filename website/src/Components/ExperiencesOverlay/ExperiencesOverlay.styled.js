@@ -10,7 +10,8 @@ const Overlay = styled.div`
     right: 0;
     bottom: 0;
     overflow-x: hidden;
-    margin: 2%;
+    margin: 1%;
+    margin-top: 0;
 `;
 
 export { Overlay };

@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
+const NavBarTitle = styled.h1`
+    font-size: 5vw;
+`;
 const NavBar = styled.nav`
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    width: 100%;
+    height: 20vh;
 `;
 
 const NavBarLinks = styled.ul`
@@ -16,7 +19,8 @@ const NavBarLinks = styled.ul`
 
 const NavBarLink = styled.li`
     color: block;
-    padding: 1rem;
+    padding: 2vw;
+    font-size: 3vw;
     display: block;
 `;
 
@@ -25,4 +29,4 @@ const NavBarLinkAncor = styled.a`
     color: inherit;
 `;
 
-export { NavBar, NavBarLinks, NavBarLink, NavBarLinkAncor };
+export { NavBar, NavBarLinks, NavBarLink, NavBarLinkAncor, NavBarTitle };
