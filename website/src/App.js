@@ -4,7 +4,6 @@ import ProfilePicture from "./Components/ProfilePicture/ProfilePicture";
 import DownloadPdfButton from "./Components/DownloadPDFButton/DownloadPdfButton";
 import ShowOverlayButton from "./Components/ShowOverlayButton/ShowOverlayButton";
 import ExperiencesOverlay from "./Components/ExperiencesOverlay/ExperiencesOverlay";
-import NavBar from "./Components/NavBar/NavBar";
 import NavBarComponent from "./Components/NavBar/NavBar";
 
 const scrollToTop = () => {
