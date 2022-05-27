@@ -5,7 +5,7 @@ import DownloadPdfButton from "./Components/DownloadPDFButton/DownloadPdfButton"
 import ShowOverlayButton from "./Components/ShowOverlayButton/ShowOverlayButton";
 import ExperiencesOverlay from "./Components/ExperiencesOverlay/ExperiencesOverlay";
 import NavBarComponent from "./Components/NavBar/NavBar";
-
+import Carousel from "./Components/Carousel/Carousel";
 const scrollToTop = () => {
     document.getElementById("LifeGoalsOverlay").scroll(0, 0);
 };
@@ -33,6 +33,7 @@ const App = () => {
                     clicked={ShowOverlayButtonClicked}
                 />
                 <DownloadPdfButton />
+                <Carousel></Carousel>
             </MainWrapper>
         </>
     );
