@@ -12,6 +12,7 @@ const Overlay = styled.div`
     overflow-x: hidden;
     margin: 1%;
     margin-top: 0;
+    z-index: 3;
 `;
 
 export { Overlay };
